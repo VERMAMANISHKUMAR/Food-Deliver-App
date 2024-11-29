@@ -1,0 +1,121 @@
+/* Navbar.css */
+.navbar {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          background-color: #fff;
+          color: #49557e;
+        }
+        .app{
+          width: 90%;
+          margin: auto;
+        }
+        .navbar img {
+          height: 40px;
+        }
+        
+        .navbar-menu {
+          list-style: none;
+          display: flex;
+          gap: 1rem;
+          color: #49557e;
+        }
+        .navbar .active-nav{
+          padding-bottom: 2px;
+          border-bottom: 2px solid #49557e;
+         
+        }
+        .navbar ul li  {
+          color: #49557e;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+    
+        
+        .navbar-right {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+        }
+        
+        .navbar-right img {
+          height: 24px;
+        }
+        
+        .navbar-search-icon {
+          position: relative;
+        }
+        
+        .navbar-search-icon .dot {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          height: 10px;
+          width: 10px;
+          background-color: #ff0000;
+          border-radius: 50%;
+        }
+        
+        button {
+          padding: 0.5rem 1rem;
+          background: transparent;
+          font-size: 16px;
+          color: black;
+          border: none;
+          cursor: pointer;
+          border: 1px solid tomato;
+          border-radius: 50px;
+        }
+        
+        button:hover {
+          background-color: #fff4f2;
+        }
+        
+      
+        @media (max-width: 768px) {
+          .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .navbar ul {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        
+          .navbar-right {
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+        }
+       
+
+        /* Navbar styles */
+
+
+/* Light Mode */
+.light {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark Mode */
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+/* Body styles for global dark and light modes */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
